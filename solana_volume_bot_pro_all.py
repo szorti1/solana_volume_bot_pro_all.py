@@ -14,7 +14,7 @@ from telegram import Bot
 TELEGRAM_TOKEN = os.environ.get("8401450027:AAFlXLgcgYGxBQNqnkk4N5-7f9lTyt_bYSs")
 CHAT_ID = os.environ.get("1725153905")
 
-bot = Bot(token=8401450027:AAFlXLgcgYGxBQNqnkk4N5-7f9lTyt_bYSs)
+bot = Bot(token="8401450027:AAFlXLgcgYGxBQNqnkk4N5-7f9lTyt_bYSs")
 
 # =====================
 # ⚡ Ustawienia Volume Bot PRO ALL
@@ -114,5 +114,6 @@ while True:
         print("Błąd główny:", e)
 
     time.sleep(CHECK_INTERVAL)
+
 
 
