@@ -14,7 +14,7 @@ CHAT_ID = os.environ.get("1725153905")
 if TELEGRAM_TOKEN is None or CHAT_ID is None:
     raise ValueError("TELEGRAM_TOKEN lub CHAT_ID nie jest ustawione!")
 
-bot = Bot(token=TELEGRAM_TOKEN)
+bot = Bot(8401450027:AAFlXLgcgYGxBQNqnkk4N5-7f9lTyt_bYSs)
 
 # =====================
 # ⚡ Ustawienia Volume Bot PRO ALL
@@ -112,4 +112,5 @@ while True:
         check_volume()
     except Exception as e:
         print("Błąd główny:", e)
+
     time.sleep(CHECK_INTERVAL)
