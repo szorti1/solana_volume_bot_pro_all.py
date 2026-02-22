@@ -8,13 +8,13 @@ from datetime import datetime, timezone
 # =====================
 # 🔐 Zmienne środowiskowe
 # =====================
-TELEGRAM_TOKEN = os.environ.get("8401450027:AAFlXLgcgYGxBQNqnkk4N5-7f9lTyt_bYSs")
-CHAT_ID = os.environ.get("1725153905")
+import os
+from telegram import Bot
 
-if TELEGRAM_TOKEN is None or CHAT_ID is None:
-    raise ValueError("TELEGRAM_TOKEN lub CHAT_ID nie jest ustawione!")
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+CHAT_ID = os.environ.get("CHAT_ID")
 
-bot = Bot(8401450027:AAFlXLgcgYGxBQNqnkk4N5-7f9lTyt_bYSs)
+bot = Bot(token=TELEGRAM_TOKEN)
 
 # =====================
 # ⚡ Ustawienia Volume Bot PRO ALL
@@ -114,3 +114,4 @@ while True:
         print("Błąd główny:", e)
 
     time.sleep(CHECK_INTERVAL)
+
